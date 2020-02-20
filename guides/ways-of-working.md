@@ -27,3 +27,8 @@ This document contains a set of recommendations on how to work on the i-on proje
     * See [Google Code Review practices](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) for recommendations on how to do a PR review.
     * Ensure timely review of the assigned PRs.
     * When applicable, a PR should only be accepted if it passed CI builds.
+
+* Keep the repository tidy. Namely, before a commit double check what is staged or configured to be included on it.
+
+* Do not rewrite the git history of publicly committed branches. namely `master`.
+
