@@ -18,7 +18,7 @@ This document contains a set of recommendations on how to work on the i-on proje
 * Create GitHub issues for all activities being done, including: analysis, documentation, development of new features, corrections. 
   * Organize those issues on the repository's _project board_.
   * Use the issues' description to document the task being done (or link to the external documentation).
-  * As as alternative, use the PR as the issue.
+  * As an alternative, use the PR as the issue.
 
 *  All work should be done on short-lived branches.
     * Naming scheme: `[feature|fix|docs|spike]/gh-nnn-description-using-kebab-case`, where `nnn` is the number of the issue describing the task.
