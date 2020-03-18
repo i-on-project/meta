@@ -1,0 +1,48 @@
+{
+  "class": [ "course" ],
+  "properties": { 
+      "acronym": "DAW"
+  },
+  "entities": [
+    {
+      "class": [ "class" ],
+      "rel": [ "https://example.com/rels/class" ], 
+      "properties": { 
+        "id": "DAW-s1920v",
+        "termId": "s1920v"
+      },
+      "links": [
+        { "rel": [ "self" ], "href": "/courses/daw/classes/s1920v" },
+        { "rel": [ "term" ], "href": "/terms/s1920v"},
+        { "rel": [ "course"], "href": "/courses/daw"}  
+      ]
+    },
+    {
+      "class": [ "class" ],
+      "rel": [ "https://example.com/rels/class" ], 
+      "properties": { 
+        "id": "DAW-s1920i",
+        "termId": "s1920i"
+      },
+      "links": [
+        { "rel": [ "self" ], "href": "/courses/daw/classes/s1920i" },
+        { "rel": [ "term" ], "href": "/terms/s1920i"},
+        { "rel": [ "course"], "href": "/courses/daw"}  
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "follow",
+      "title": "Seguir",
+      "method": "POST",
+      "href": "/courses/daw/follow",
+      "type": "application/x-www-form-urlencoded",
+      "fields": [
+      ]
+    }
+  ],
+  "links": [
+    { "rel": [ "self" ], "href": "/courses/daw" }
+  ]
+}

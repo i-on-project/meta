@@ -1,0 +1,32 @@
+  GET / HTTP/1.1
+  Host: example.org
+  Accept: application/json-home
+
+  HTTP/1.1 200 OK
+  Content-Type: application/json-home
+  Cache-Control: max-age=3600
+  Connection: close
+
+  {
+    "api": {
+      "title": "Example API",
+      "links": {
+        "author": "mailto:api-admin@example.com",
+        "describedBy": "https://example.com/api-docs/"
+      }
+    },
+    "resources": {
+      "courses": {
+        "href": "/v0/courses"
+      },
+      "courses-search": {
+        "href": "/v0/courses{?q}",
+        "hrefVars": {
+          "q": "https://example.org/param/free-text-query"
+        },
+        "hints": {
+          "allow": ["GET"]  
+        }
+      }
+    }
+  }

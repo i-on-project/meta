@@ -1,0 +1,47 @@
+{
+  "class": [ "collection", "course" ],
+  "properties": { 
+      "size": 2
+  },
+  "entities": [
+    {
+      "class": [ "course" ],
+      "rel": [ "item" ], 
+      "properties": { 
+        "acronym": "DAW"
+      },
+      "links": [
+        { "rel": [ "self" ], "href": "/courses/daw" }
+      ]
+    },
+    {
+      "class": [ "class" ],
+      "rel": [ "item" ], 
+      "properties": { 
+        "acronym": "LS"
+      },
+      "links": [
+        { "rel": [ "self" ], "href": "/courses/ls" }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "search",
+      "title": "Procurar",
+      "method": "GET",
+      "href": "/courses/daw{?q}",
+      "isTemplated": true,
+      "type": "application/x-www-form-urlencoded",
+      "fields": [
+        { "name": "q", "type": "text", "class": "https://example.org/param/free-text-query"}
+      ]
+    }
+  ],
+  
+  "links": [
+    { "rel": [ "self" ], "href": "/courses?page=1" },
+    { "rel": [ "next" ], "href": "/courses?page=2" },
+    { "rel": [ "previous" ], "href": "/courses?page=0" }
+  ]
+}
