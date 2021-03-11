@@ -31,7 +31,7 @@ This document contains a set of recommendations on how to work on the i-on proje
 
 * Keep the repository tidy. Namely, before a commit double check what is staged or configured to be included on it.
 
-* Do not rewrite the git history of publicly committed branches. namely `master`.
+* Do not rewrite the git history of publicly committed branches, namely `master`.
 
 * Each project's main repository should have a GitHub project (e.g. [https://github.com/i-on-project/core/projects/2])
   * The project has the following columns
