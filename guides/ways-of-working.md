@@ -19,6 +19,7 @@ This document contains a set of recommendations on how to work on the i-on proje
   * Organize those issues on the repository's _project board_.
   * Use the issues' description to document the task being done (or link to the external documentation).
   * As an alternative, use the PR as the issue.
+  * Use the `PS` label for all the tasks that are related to "Projecto e Seminário" deliverables (e.g. reports).
 
 *  All work should be done on short-lived branches.
     * Naming scheme: `[feature|fix|docs|spike]/gh-nnn-description-using-kebab-case`, where `nnn` is the number of the issue describing the task.
@@ -31,4 +32,19 @@ This document contains a set of recommendations on how to work on the i-on proje
 * Keep the repository tidy. Namely, before a commit double check what is staged or configured to be included on it.
 
 * Do not rewrite the git history of publicly committed branches. namely `master`.
+
+* Each project's main repository should have a GitHub project (e.g. [https://github.com/i-on-project/core/projects/2])
+  * The project has the following columns
+    * `To Define` - Task that might need to be done, however isn't yet fully defined or agreed upon.
+    * `To Do` - Task that needs to be done.
+    * `Doing` - Task that is beeing done.
+    * `Review` - Task that is pending review. A PR should probably exist for it.
+    * `Done` - Task is done.
+    * `Rejected` - Task will not be done.
+
+* Each project should have one milestone per week
+  * Uses the following naming convention `Wnn-2021`, where the `nn` is the week number.
+  * If a weekly milestone is too fine grained, then we can have a fortnighly one. The numbering should still be weekly, so we would have `W01-2021`, followed by `W03-2021`.
+  * Each task should have an associated milestone, namely if they are on the project board and already out of the `To Define` phase.
+
 
