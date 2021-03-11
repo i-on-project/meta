@@ -23,9 +23,9 @@ This document contains a set of recommendations on how to work on the i-on proje
 
 *  All work should be done on short-lived branches.
     * Naming scheme: `[feature|fix|docs|spike]/gh-nnn-description-using-kebab-case`, where `nnn` is the number of the issue describing the task.
-    * The merge of these branches into `dev` should use [pull requests (PR)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+    * The merge of these branches into `master|main` should use [pull requests (PR)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
     * The PR author decides who are the reviewers, taking into consideration information or requirements in the issue.
-    * See [Google Code Review practices](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) for recommendations on how to do a PR review.
+    * See [Google Code Review practices](https://google.github.io/eng-practices/review/) for recommendations on how to do a PR review.
     * Ensure timely review of the assigned PRs.
     * When applicable, a PR should only be accepted if it passed CI builds.
 
